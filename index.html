@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AFTDetailing | Mobile Car Detailing</title>
+  <meta name="description" content="Premium mobile car detailing. Interior, exterior, ceramic coatings. Book a detail in minutes." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Top Bar -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <div class="topbar-left">📍 Serving <span class="muted">Your City</span></div>
+      <div class="topbar-right">
+        <a class="toplink" href="tel:+15551234567">Call: (555) 123-4567</a>
+        <a class="toplink" href="sms:+15551234567">Text</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Nav -->
+  <header class="header">
+    <div class="container nav">
+      <a class="logo" href="#home">
+        <span class="logo-mark">◆</span> AFTDetail <span class="muted">Detailing</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#services">Services</a>
+        <a href="#packages">Packages</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-cta">
+        <button class="icon-btn" id="menuBtn" aria-label="Open menu">☰</button>
+        <a class="btn btn-primary" href="#contact">Get a Quote</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main id="home" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <p class="badge">✨ Mobile Detailing • Same-week appointments</p>
+        <h1>Showroom shine, delivered to your driveway.</h1>
+        <p class="lead">
+          Interior deep cleans, exterior wash & wax, paint correction, and ceramic coatings.
+          Transparent pricing. Fast booking.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#contact">Book / Request Quote</a>
+          <a class="btn btn-secondary" href="#packages">See Packages</a>
+        </div>
+
+        <div class="trust">
+          <div class="trust-item">
+            <div class="trust-num">⭐ 4.9</div>
+            <div class="muted">Average rating</div>
+          </div>
+          <div class="trust-item">
+            <div class="trust-num">500+</div>
+            <div class="muted">Details completed</div>
+          </div>
+          <div class="trust-item">
+            <div class="trust-num">Insured</div>
+            <div class="muted">Professional service</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <div class="hero-image" role="img" aria-label="Car detailing hero image"></div>
+
+        <div class="hero-quick">
+          <h3>Quick estimate</h3>
+          <p class="muted small">Tell us your vehicle + service. We’ll respond fast.</p>
+
+          <form class="mini-form" id="quickForm">
+            <label>
+              Vehicle Type
+              <select name="vehicle" required>
+                <option value="">Select…</option>
+                <option>Sedan</option>
+                <option>SUV</option>
+                <option>Truck</option>
+                <option>Van</option>
+              </select>
+            </label>
+
+            <label>
+              Service
+              <select name="service" required>
+                <option value="">Select…</option>
+                <option>Exterior Detail</option>
+                <option>Interior Detail</option>
+                <option>Full Detail</option>
+                <option>Ceramic Coating</option>
+              </select>
+            </label>
+
+            <label>
+              Zip Code
+              <input name="zip" inputmode="numeric" placeholder="e.g. 10001" required />
+            </label>
+
+            <button class="btn btn-primary btn-block" type="submit">Request Estimate</button>
+            <p class="small muted">No spam. Just a quick reply.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Services -->
+  <section id="services" class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>Services</h2>
+        <p class="muted">Pick what you need — or choose a package below.</p>
+      </div>
+
+      <div class="cards">
+        <article class="card">
+          <h3>Exterior Detail</h3>
+          <p class="muted">Foam wash, wheels, decon, wax/sealant, tire shine.</p>
+          <ul class="list">
+            <li>Hand wash + dry</li>
+            <li>Wheel & tire clean</li>
+            <li>Bug/tar removal</li>
+            <li>Wax or sealant</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Interior Detail</h3>
+          <p class="muted">Vacuum, shampoo, steam, leather conditioning.</p>
+          <ul class="list">
+            <li>Full vacuum</li>
+            <li>Stain treatment</li>
+            <li>Dash & trim clean</li>
+            <li>Odor neutralizer</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Paint Correction</h3>
+          <p class="muted">Remove swirls & light scratches for a mirror finish.</p>
+          <ul class="list">
+            <li>One-step polish</li>
+            <li>Two-step available</li>
+            <li>Gloss enhancement</li>
+            <li>Protection add-on</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Ceramic Coating</h3>
+          <p class="muted">Long-lasting protection + insane hydrophobic shine.</p>
+          <ul class="list">
+            <li>1–5 year options</li>
+            <li>Prep + decon</li>
+            <li>Coating application</li>
+            <li>Aftercare guide</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Packages -->
+  <section id="packages" class="section section-alt">
+    <div class="container">
+      <div class="section-head">
+        <h2>Popular Packages</h2>
+        <p class="muted">Straightforward pricing. Final quote depends on vehicle size + condition.</p>
+      </div>
+
+      <div class="pricing">
+        <article class="price-card">
+          <div class="price-top">
+            <h3>Basic Shine</h3>
+            <p class="muted">Maintenance clean</p>
+          </div>
+          <div class="price">$99<span class="muted small">+</span></div>
+          <ul class="list">
+            <li>Exterior hand wash</li>
+            <li>Quick interior vacuum</li>
+            <li>Windows cleaned</li>
+            <li>Tires dressed</li>
+          </ul>
+          <a class="btn btn-secondary btn-block" href="#contact">Choose Basic</a>
+        </article>
+
+        <article class="price-card featured">
+          <div class="pill">Most Popular</div>
+          <div class="price-top">
+            <h3>Full Detail</h3>
+            <p class="muted">Inside + outside reset</p>
+          </div>
+          <div class="price">$199<span class="muted small">+</span></div>
+          <ul class="list">
+            <li>Exterior wash + wax</li>
+            <li>Interior deep clean</li>
+            <li>Stain treatment</li>
+            <li>Dash/trim protection</li>
+          </ul>
+          <a class="btn btn-primary btn-block" href="#contact">Choose Full</a>
+        </article>
+
+        <article class="price-card">
+          <div class="price-top">
+            <h3>Premium Protect</h3>
+            <p class="muted">Correction + protection</p>
+          </div>
+          <div class="price">$499<span class="muted small">+</span></div>
+          <ul class="list">
+            <li>Paint decon</li>
+            <li>One-step polish</li>
+            <li>Sealant / coating option</li>
+            <li>Interior refresh</li>
+          </ul>
+          <a class="btn btn-secondary btn-block" href="#contact">Choose Premium</a>
+        </article>
+      </div>
+
+      <p class="note muted small">
+        * Add-ons: pet hair removal, heavy stain extraction, headlight restoration, engine bay, etc.
+      </p>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>Before & After</h2>
+        <p class="muted">Swap these images with your own work photos.</p>
+      </div>
+
+      <div class="gallery">
+        <img src="assets/gallery-1.jpg" alt="Detailing result 1" loading="lazy" />
+        <img src="assets/gallery-2.jpg" alt="Detailing result 2" loading="lazy" />
+        <img src="assets/gallery-3.jpg" alt="Detailing result 3" loading="lazy" />
+        <img src="assets/gallery-4.jpg" alt="Detailing result 4" loading="lazy" />
+        <img src="assets/gallery-5.jpg" alt="Detailing result 5" loading="lazy" />
+        <img src="assets/gallery-6.jpg" alt="Detailing result 6" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section id="reviews" class="section section-alt">
+    <div class="container">
+      <div class="section-head">
+        <h2>What customers say</h2>
+        <p class="muted">Add real Google reviews when you have them.</p>
+      </div>
+
+      <div class="cards">
+        <article class="card">
+          <p class="quote">“My car looks brand new. Super professional and on time.”</p>
+          <p class="muted small">— Alex R.</p>
+        </article>
+        <article class="card">
+          <p class="quote">“Got pet hair out of places I didn’t know existed. 10/10.”</p>
+          <p class="muted small">— Sam T.</p>
+        </article>
+        <article class="card">
+          <p class="quote">“The paint correction was insane. Mirror finish.”</p>
+          <p class="muted small">— Jordan K.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>FAQ</h2>
+        <p class="muted">Quick answers to common questions.</p>
+      </div>
+
+      <div class="faq">
+        <details class="faq-item">
+          <summary>How long does a full detail take?</summary>
+          <p class="muted">Typically 2–4 hours depending on vehicle size and condition.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Do you need access to water/power?</summary>
+          <p class="muted">Not always. We can bring our own setup if needed—just tell us ahead of time.</p>
+        </details>
+        <details class="faq-item">
+          <summary>What affects the final price?</summary>
+          <p class="muted">Vehicle size, level of dirt, pet hair, stains, and add-ons like coatings or correction.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Do you offer ceramic coatings?</summary>
+          <p class="muted">Yes—1–5 year options with proper paint prep included.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section section-alt">
+    <div class="container contact-grid">
+      <div>
+        <h2>Book a detail</h2>
+        <p class="muted">
+          Fill this out and we’ll text/call you back with pricing and availability.
+        </p>
+
+        <div class="contact-cards">
+          <div class="contact-card">
+            <div class="muted small">Phone</div>
+            <a href="tel:+15551234567">(555) 123-4567</a>
+          </div>
+          <div class="contact-card">
+            <div class="muted small">Hours</div>
+            <div>Mon–Sat: 9am–6pm</div>
+          </div>
+          <div class="contact-card">
+            <div class="muted small">Service Area</div>
+            <div>Your City + surrounding areas</div>
+          </div>
+        </div>
+      </div>
+
+      <form class="form card" id="quoteForm">
+        <div class="form-row">
+          <label>
+            Name
+            <input name="name" autocomplete="name" required />
+          </label>
+          <label>
+            Phone
+            <input name="phone" autocomplete="tel" required />
+          </label>
+        </div>
+
+        <div class="form-row">
+          <label>
+            Vehicle
+            <input name="vehicle" placeholder="e.g., 2020 Honda Accord" required />
+          </label>
+          <label>
+            Preferred Service
+            <select name="service" required>
+              <option value="">Select…</option>
+              <option>Basic Shine</option>
+              <option>Full Detail</option>
+              <option>Premium Protect</option>
+              <option>Custom</option>
+            </select>
+          </label>
+        </div>
+
+        <label>
+          Address / Zip (for mobile service)
+          <input name="location" placeholder="Street or zip code" required />
+        </label>
+
+        <label>
+          Notes (stains, pet hair, coating, etc.)
+          <textarea name="notes" rows="4" placeholder="Tell us what you want done..."></textarea>
+        </label>
+
+        <button class="btn btn-primary btn-block" type="submit">Send Request</button>
+        <p class="small muted">
+          This template uses a demo form handler (no backend). See <span class="mono">script.js</span>.
+        </p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="muted small">© <span id="year"></span> ShinePro Detailing. All rights reserved.</div>
+      <div class="footer-links">
+        <a href="#services">Services</a>
+        <a href="#packages">Packages</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
