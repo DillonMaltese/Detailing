@@ -83,5 +83,27 @@ function handleForm(formId) {
   });
 }
 
+// Custom file input label
+(function () {
+  const input = document.getElementById("photos");
+  const nameEl = document.getElementById("fileName");
+  if (!input || !nameEl) return;
+
+  // clicking the fake button should open picker
+  const btn = input.closest(".file-field")?.querySelector(".file-btn");
+  if (btn) btn.addEventListener("click", () => input.click());
+
+  input.addEventListener("change", () => {
+    const files = input.files ? Array.from(input.files) : [];
+    if (files.length === 0) {
+      nameEl.textContent = ""; // show nothing (no "No file chosen")
+    } else if (files.length === 1) {
+      nameEl.textContent = files[0].name;
+    } else {
+      nameEl.textContent = `${files.length} photos selected`;
+    }
+  });
+})();
+
 handleForm("quickForm");
 handleForm("quoteForm");
