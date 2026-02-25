@@ -106,4 +106,3 @@ function handleForm(formId) {
 })();
 
 handleForm("quickForm");
-handleForm("quoteForm");
